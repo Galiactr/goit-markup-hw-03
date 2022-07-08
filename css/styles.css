@@ -34,8 +34,8 @@
 .studio {
   color: #2196f3;
 }
-.navigation-link:hover{
-  color: #2196f3;  
+.navigation-link:hover {
+  color: #2196f3;
 }
 .contact-info {
   list-style: none;
@@ -178,14 +178,13 @@ address {
   font-family: "Roboto";
   font-style: 400px;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.6;
   display: flex;
-  font-weight: 700;
-  align-items: center;
+  font-weight: 500;
   border: none;
   text-align: center;
   color: #212121;
-  background-color:#F5F4FA;
+  background-color: #f5f4fa;
   cursor: pointer;
 }
 .all {
@@ -206,4 +205,22 @@ address {
 }
 .portfolio-introduction {
   list-style: none;
+}
+.project-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.project-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
