@@ -45,7 +45,6 @@
 .email,
 .phone-number {
   text-decoration: none;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.1;
   color: var(--text-color);
@@ -61,17 +60,14 @@
   background-color: #2f303a;
 }
 .hero-title {
-  font-style: 400;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--wight-text);
 }
 .button-primary {
-  font-style: 400px;
   font-size: 16px;
   line-height: 1.9;
-  display: flex;
   align-items: center;
   text-align: center;
   border: none;
@@ -162,11 +158,15 @@ address {
   font-size: 14px;
   line-height: 1.1;
 }
+.email-portfolio:hover {
+  color: var(--button-color);
+}
+.button-list {
+  list-style: none;
+}
 .button-portfolio {
-  font-style: 400px;
   font-size: 16px;
   line-height: 1.6;
-  display: flex;
   border: none;
   text-align: center;
   color: var(--text-title-color);
@@ -191,14 +191,12 @@ address {
   list-style: none;
 }
 .project-name {
-  font-style: normal;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--text-title-color);
 }
 .project-text {
-  font-style: normal;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
