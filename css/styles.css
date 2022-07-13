@@ -25,9 +25,20 @@ body {
 .container.header{
    margin-bottom: 0;  
  }
+ .site-nav {
+  display: flex;
+ }
+ .site-nav .item {
+   margin-right: 50px;
+ }
+ .site-nav .item:last-child {
+  margin-right: 0;
+ }
+ /* .site-nav .item:not(:last-child) -пример */
 .logo {
   font-family: "Raleway";
   font-style: 400px;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--button-color);
@@ -39,28 +50,43 @@ body {
 .site-pages {
   color: var(--text-title-color);
   list-style: none;
+  display: flex;
 }
-.navigation-link {
+.site-nav .link {  
   font-style: 400px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   color: var(--text-title-color);
   text-decoration: none;
+  display: block;
 }
-.studio {
+.site-nav .studio {
   color: var(--button-color);
 }
-.navigation-link:hover {
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--button-color);
 }
 .contact-info {
   list-style: none;
-  margin-bottom: 0;
+  display: flex;  
   }
+  .item {
+    margin-right: 50px;
+  }
+  /* .item:not(last-child) {
+    margin-right: 0;
+  } */
+  /* .item + .item {
+    margin-right: 50px;
+  } */
+
 .email,
-.phone-number {
+.p-number {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.1;
   color: var(--text-color);
 }
@@ -68,7 +94,7 @@ body {
   color: var(--button-color);
 }
 
-.phone-number:hover {
+.p-number:hover {
   color: var(--button-color);
 }
 .hero {
@@ -77,6 +103,7 @@ body {
 }
 .hero-title {
   margin-top: 0;
+  font-weight: 900;
   margin-bottom: 40px;
   font-size: 44px;
   line-height: 1.4;
@@ -88,6 +115,7 @@ body {
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
+  font-weight: 700;
   border: 1px solid transparent;
   color: var(--wight-text);
   background-color: var(--button-color);
@@ -112,6 +140,7 @@ body {
 }
 .features-title {
   text-align: center;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   color: var(--text-title-color);
@@ -121,6 +150,7 @@ body {
 .feature-name {
   margin-bottom: 10px;
   margin-top: 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   color: var(--text-title-color);
@@ -128,6 +158,7 @@ body {
 }
 .feature-text {
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.7;
   color: var(--text-color);
   margin-top: 0;
@@ -139,6 +170,7 @@ margin-top: 0;
 .work-title {
   font-size: 36px;
   line-height: 1.2;
+  font-weight: 700;
   color: var(--text-title-color);
   margin-bottom: 50px;  
   text-align: center;
@@ -158,6 +190,7 @@ margin-top: 0;
   }
 .team-title {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--text-title-color);
   margin-top: 0;
@@ -169,12 +202,14 @@ margin-top: 0;
 }
 .name {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.2;
   color: var(--text-title-color);
   margin-bottom: 10px;
 }
 p {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.2;
   color: var(--text-color);
 }
@@ -187,6 +222,7 @@ p {
 }
 address {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--wight-text);
@@ -219,6 +255,7 @@ address {
   font-size: 16px;
   line-height: 1.6;
   border: none;
+  font-weight: 500;
   text-align: center;
   color: var(--text-title-color);
   background-color: #f5f4fa;
@@ -236,20 +273,27 @@ address {
 }
 .portfolio-title {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.2;
   color: var(--text-title-color);
 }
 .portfolio-introduction {
   list-style: none;
+  text-decoration: none;  
+}
+.navigation-portfol {
+  text-decoration: none;
 }
 .project-name {
   font-size: 18px;
   line-height: 2;
+  font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--text-title-color);
 }
 .project-text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--text-color);
