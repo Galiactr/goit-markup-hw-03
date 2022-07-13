@@ -12,30 +12,30 @@ body {
   width: 1600px;
 
 }
+.header {
+  background-color: var(--wight-text);
+  margin-bottom: 0;  
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  outline: 1px solid tomato;
+}
 .container {
-   width: 1200px;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 94px;
   text-align: center;
+  display: flex;  
+  margin-bottom: 0;
  }
-.page-header {
-  background-color: var(--wight-text);
-}
-.container.header{
-   margin-bottom: 0;  
- }
- .site-nav {
-  display: flex;
- }
- .site-nav .item {
+ .container .item {
    margin-right: 50px;
  }
- .site-nav .item:last-child {
+ .container .item:last-child {
   margin-right: 0;
  }
  /* .site-nav .item:not(:last-child) -пример */
-.logo {
+.header-logo {
   font-family: "Raleway";
   font-style: 400px;
   font-weight: 700;
@@ -47,12 +47,13 @@ body {
 .logo-accent {
   color: var(--text-title-color);
 }
-.site-pages {
+.site-nav  {
   color: var(--text-title-color);
   list-style: none;
   display: flex;
+  margin-bottom: 0;
 }
-.site-nav .link {  
+.container .link {  
   font-style: 400px;
   font-weight: 500;
   font-size: 14px;
@@ -61,16 +62,17 @@ body {
   text-decoration: none;
   display: block;
 }
-.site-nav .studio {
+.container .studio {
   color: var(--button-color);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.container .link:hover,
+.container .link:focus {
   color: var(--button-color);
 }
 .contact-info {
   list-style: none;
   display: flex;  
+  margin-bottom: 0;  
   }
   .item {
     margin-right: 50px;
@@ -99,30 +101,29 @@ body {
 }
 .hero {
   background-color: #2f303a;
-  text-align: center;
+  text-align: center;  
 }
 .hero-title {
   margin-top: 0;
   font-weight: 900;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--wight-text);
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 .button-primary {
   font-size: 16px;
   line-height: 1.9;
-  text-align: center;
   font-weight: 700;
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   color: var(--wight-text);
   background-color: var(--button-color);
   cursor: pointer;
   border-radius: 4px;  
   display: inline-block;
-  padding: 10px 32px 10px 32px;
+  padding: 10px 32px;
   min-width: 136px;   
   margin-bottom: 0px;
   }
