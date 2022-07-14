@@ -248,6 +248,7 @@ p {
   line-height: 1.2;
   color: var(--text-color);
 }
+/* Футер */
 .footer {
   background-color: #2f303a;
 }
