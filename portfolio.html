@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
-    />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- Шапка сайта -->
-         <header class="header">          
-            <nav class="container-head main-nav">
+         <header class="header portfolio">          
+            <nav class="container-head">
                       <a href="#hero" class="header-logo"
           >Web<span class="logo-accent">Studio</span></a
         >
                <ul class="site-nav list">   
-          <li class="item"><a href="" class="link studio">Студия</a></li>
+          <li class="item"><a href="./index.html" class="link ">Студия</a></li>
           <li class="item">
-            <a href="portfolio.html" class="link">Портфолио</a>
+            <a href="" class="link studio">Портфолио</a>
           </li>
           <li class="item"><a href="" class="link">Контакты</a></li>
         </ul>
@@ -41,8 +40,8 @@
     <main>
       <!--Портфолио-->
       <section class="portfolio">
-        <h2 class="portfolio-title">Портфолио</h2>
-        <div class="btn-portfolio-container">
+        <div class="container">
+        <h2 class="section-title-first">Портфолио</h2>        
         <ul class="button-list">
           <li>
             <button type="button" class="button-portfolio all">Все</button>
@@ -59,8 +58,7 @@
           <li>
             <button type="button" class="button-portfolio">Маркетинг</button>
           </li>
-        </ul>
-        </div>
+        </ul>           
         <ul class="portfolio-introduction">
           <li>
             <a href="" class="navigation-portfol"><img
@@ -177,11 +175,13 @@
             <p class="project-text">Приложение</p>
             </a>
           </li>
-        </ul>
+            </ul>           
+        </div>
       </section>
     </main>
-    <footer class="footer">
-      <a href="#hero" class="logo"
+       <footer class="footer">
+      <div class="container">
+      <a href="#hero" class="header-logo"
         >Web<span class="logo-accent-footer">Studio</span></a
       >
       <address>
@@ -191,6 +191,7 @@
         >
         <a href="tel:+80991111111" class="footer-address">+380991111111</a>
       </address>
+      </div>
     </footer>
   </body>
 </html>
