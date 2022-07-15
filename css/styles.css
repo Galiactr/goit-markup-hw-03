@@ -20,8 +20,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   width: 1200px;
-  text-align: center;
-  }
+    }
 .container-head {
   display: flex;
   margin-right: 0;
@@ -36,8 +35,7 @@ body {
  .item .link:last-child {
   margin-right: 0;
  }
- /* .site-nav .item:not(:last-child) -пример */
-.header-logo {
+ .header-logo {
   font-family: "Raleway";
   font-style: 400px;
   font-weight: 700;
@@ -87,13 +85,6 @@ body {
   .item {
     margin-right: 50px;
   }
-  /* .item:not(last-child) {
-    margin-right: 0;
-  } */
-  /* .item + .item {
-    margin-right: 50px;
-  } */
-
 .email,
 .p-number {
   text-decoration: none;
@@ -200,19 +191,13 @@ body {
   margin-top: 0;
   margin-bottom: 50px;
 }
-/* .work-title {
-  font-size: 36px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: var(--text-title-color);
-  margin-bottom: 50px;  
-  text-align: center;
-} */
 .work-list {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 .work-name {
   margin-bottom: 0;
@@ -225,6 +210,8 @@ body {
 
 .team-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .team-photo {
   margin-bottom: 30px;
@@ -347,9 +334,6 @@ address {
   width: 370px;
   margin-bottom: 20px;
 }
-/* .project:nth-child(3n) {
-    margin-right: 0;
-}  */
 .project-name {
   font-size: 18px;
   line-height: 2;
