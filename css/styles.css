@@ -17,7 +17,8 @@ body {
   align-items: center;
 }
 .container {
-  margin: 0 auto;
+  margin-left: 0;
+  margin-right: 0;
   padding: 0 15px;
   width: 1200px;
     }
@@ -154,13 +155,24 @@ body {
   display: flex;
 }
 .section-title-first {
-  text-align: center;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  /* * text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   color: var(--text-title-color);
   margin-top: 0;
   margin-bottom: 0;
+  overflow: hidden; */ 
 }
 .title {
   margin-bottom: 10px;
@@ -192,17 +204,19 @@ body {
   margin-bottom: 50px;
 }
 .work-list {
-  list-style: none;
-  margin-top: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+}
+ .work-name {
   margin-bottom: 0;
   padding-bottom: 0;
-  display: flex;
-  justify-content: space-between;
 }
-.work-name {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
+ .work-name:not(:nth-child(1n + 3)) {
+  margin-right: 30px;
+  }
 /* Наша команда  */
 .section.team {
   background-color: #f5f4fa;
@@ -211,9 +225,16 @@ body {
 .team-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  }
+.portfolio-list {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+.portfolio-list:not(:nth-child(1n + 4)) {
+  margin-right: 30px;
 }
 .team-photo {
+  margin-bottom: 30px;
   margin-bottom: 30px;
 }
 .name {
@@ -222,12 +243,14 @@ body {
   line-height: 1.2;
   color: var(--text-title-color);
   margin-bottom: 10px;
+  margin-top: 0;
 }
 p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   color: var(--text-color);
+  margin-top: 0;
 }
 /* Футер */
 .footer {
