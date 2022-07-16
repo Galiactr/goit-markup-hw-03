@@ -17,18 +17,22 @@ ul {
   margin: 0;
   padding: 0;
 } 
+img {
+  display: block;
+}
 .container {
   margin: 0 auto;
   width: 1200px;
   padding: 0 15px;
 }
+.section {
+  padding: 94px 0;
+}
 .section.no-padding {
   padding: 0;
   margin-bottom: 94px;
 }
-.section.padding {
-  padding: 94px 0;
-}
+
 /* Шапка */
 
 .header {
@@ -164,6 +168,9 @@ margin-right: 50px;
 
  /* Особенности */
 
+ .activity {
+  margin-top: 94px;
+ }
 .section-title-first {
   position: absolute;
   width: 1px;
@@ -266,7 +273,7 @@ margin-right: 50px;
   margin-bottom: 10px;
   margin-top: 0;
 }
-p {
+.job-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -274,25 +281,7 @@ p {
   margin-top: 0;
   text-align: center;
 }
-/* Футер */
-.footer {
-  background-color: #2f303a
-  }
-.logo-accent-footer {
-  color: var(--wight-text);
-  font-weight: 700;
-}
-address {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--wight-text);
-  }
-.footer-address {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-}
+
 /* Портфолио */
 
 .header.portfolio {
@@ -311,7 +300,7 @@ address {
 .email-portfolio:hover {
   color: var(--button-color);
 }
-/* Портфолио */
+/* Портфолио список*/
 .portfolio {
   margin-bottom: 94px;
   margin-top: 0;
@@ -396,6 +385,11 @@ address {
   width: 370px;
   margin-bottom: 20px;
 }
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .project-name {
   font-size: 18px;
   line-height: 2;
@@ -414,4 +408,25 @@ address {
   color: var(--text-color);
   margin-top: 0;
   
+}
+/* Футер */
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+  }
+.logo-accent-footer {
+  color: var(--wight-text);
+  font-weight: 700;
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--wight-text);
+  }
+.footer-address {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
