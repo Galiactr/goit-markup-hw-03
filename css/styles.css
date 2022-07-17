@@ -253,6 +253,7 @@ img {
 .portfolio-list {
   margin-right: 30px;
   margin-bottom: 0;
+  padding-bottom: 30px;
   background-color: var(--wight-text);
   border-radius: 0px 0px 4px 4px;
 
