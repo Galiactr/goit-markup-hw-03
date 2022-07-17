@@ -112,6 +112,12 @@ img {
 .item {
   margin-right: 50px;
 }
+.item-contact {
+  margin-right: 50px;
+}
+.item-contact:not(last-chiled) {
+  margin-right: 0;
+}
 .email,
 .p-number {
   text-decoration: none;
@@ -126,6 +132,7 @@ img {
 .p-number {
   margin: 0;
 }
+
 .p-number:hover {
   color: var(--button-color);
 }
@@ -169,9 +176,6 @@ img {
 
 /* Особенности */
 
-.activity {
-  margin-top: 94px;
-}
 .section-title-first {
   position: absolute;
   width: 1px;
@@ -214,9 +218,6 @@ img {
 }
 /* Примеры работы */
 
-.activity {
-  padding-top: 0;
-}
 .section-title {
   text-align: center;
   font-weight: 700;
@@ -260,9 +261,13 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.portfolio-list:not(:nth-child(1n + 4)) {
+.portfolio-list:nth-child(4n) {
+  margin-right: 0;
+} 
+
+/* .portfolio-list:not(:nth-child(1n + 4)) {
   margin-right: 30px;
-}
+} */
 .team-photo {
   margin-bottom: 30px;
   margin-bottom: 30px;
@@ -366,7 +371,7 @@ img {
   line-height: 1.9;
   margin-right: 30px;
   margin-left: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 
   flex-basis: calc(100% / 3 - 30px);
 }
