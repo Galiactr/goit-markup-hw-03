@@ -22,32 +22,30 @@ img {
 }
 .container {
   margin: 0 auto;
-  width: 1200px;
   padding: 0 15px;
+  width: 1200px;
 }
 .section {
   padding: 94px 0;
 }
 .section.no-padding {
   padding: 0;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* Шапка */
 
 .header {
   background-color: var(--wight-text);
-  margin: 0 auto;
-  padding: 0 15px;
-  width: 1200px;
-  display: flex;
+  border: 1px solid #ececec;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  align-items: center;
 }
-
-.container-head {
+.header-flex {
+  display: flex;
+}
+.main-nav {
   display: flex;
   margin-right: 0;
   margin-left: 0;
@@ -69,7 +67,7 @@ img {
 .logo-accent {
   color: var(--text-title-color);
 }
-.container-head,
+.main-nav,
 .nav-list,
 .contact-info {
   display: inherit;
@@ -83,19 +81,17 @@ img {
   padding-left: 0;
 }
 .item .link {
-  margin-right: 50px;
-}
-.item .link:last-child {
-  margin-right: 0;
-}
-.item .link {
-  font-style: 400px;
-  color: var(--text-title-color);
   text-decoration: none;
   display: block;
+  padding: 32px 0;
+  margin-right: 50px;
+  color: var(--text-title-color);
 }
 .item .studio {
   color: var(--button-color);
+}
+.item:not(:last-child) {
+  margin-right: 50px;
 }
 .item .link:hover,
 .item .link:focus {
@@ -108,15 +104,12 @@ img {
   margin-bottom: 0;
   margin-left: auto;
   padding-left: 0;
-}
-.item {
-  margin-right: 50px;
-}
+  }
 .item-contact {
   margin-right: 50px;
 }
-.item-contact:not(last-chiled) {
-  margin-right: 0;
+.item-contact:not(:last-child) {
+  margin-right: 50px;
 }
 .email,
 .p-number {
@@ -138,12 +131,12 @@ img {
 }
 /* Герой */
 
-.hero {
+.section.hero {
   background-color: #2f303a;
   text-align: center;
   color: var(--wight-text);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-top: 0;
@@ -254,7 +247,6 @@ img {
 .portfolio-list {
   margin-right: 30px;
   margin-bottom: 0;
-  padding-bottom: 30px;
   background-color: var(--wight-text);
   border-radius: 0px 0px 4px 4px;
 
@@ -264,13 +256,9 @@ img {
 .portfolio-list:nth-child(4n) {
   margin-right: 0;
 } 
-
-/* .portfolio-list:not(:nth-child(1n + 4)) {
-  margin-right: 30px;
-} */
-.team-photo {
-  margin-bottom: 30px;
-  margin-bottom: 30px;
+.team-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .name {
   color: var(--text-title-color);
