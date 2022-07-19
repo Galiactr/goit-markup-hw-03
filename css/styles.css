@@ -38,7 +38,7 @@ img {
 
 .header {
   background-color: var(--wight-text);
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -59,11 +59,9 @@ img {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   color: var(--button-color);
-  font-style: 400px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  padding: 32px 0;
   margin-top: 0;
   margin-bottom: 0;
   margin-right: 93px;
@@ -82,7 +80,6 @@ img {
   text-decoration: none;
   display: block;
   padding: 32px 0;
-  margin-right: 50px;
   color: var(--text-title-color);
 }
 .item .studio {
@@ -102,8 +99,8 @@ img {
   margin-bottom: 0;
   margin-left: auto;
   padding-left: 0;
-  padding: 32px 0;
-  }
+  align-items: center;
+}
 .item-contact {
   margin-right: 50px;
 }
@@ -117,9 +114,6 @@ img {
 }
 .email:hover {
   color: var(--button-color);
-}
-.email {
-  margin: 0 50px 0 0;
 }
 .p-number {
   margin: 0;
@@ -350,15 +344,13 @@ img {
   margin-right: 0;
   margin-left: 0;
   margin-bottom: 0;
-  /* margin-bottom: calc(-1 * 30px); */
-  /* justify-content: space-between; */
 }
 .portfolio-lists {
   font-size: 16px;
   line-height: 1.9;
   margin-right: 30px;
   margin-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 
   flex-basis: calc(100% / 3 - 30px);
 }
@@ -382,9 +374,6 @@ img {
   margin-top: 0;
   margin-right: 0;
 }
-/* .navigation-portfol:nth-child(3n) {
-   margin-right: 0;
-} */
 .project {
   width: 370px;
   margin-bottom: 0;
@@ -393,8 +382,7 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  margin-top: 0;
-}
+  }
 .project-name {
   font-size: 18px;
   line-height: 2;
@@ -417,11 +405,13 @@ img {
 .footer {
   background-color: #2f303a;
   margin: 0;
-}
-.logo-footer {
   padding-top: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 60px;
 }
+.header-logo.logo-footer {
+  margin-bottom: 20px;
+} 
+
 .logo-accent-footer {
   color: var(--wight-text);
   font-weight: 700;
