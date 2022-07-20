@@ -422,12 +422,11 @@ address {
   font-size: 14px;
   line-height: 1.7;
   color: var(--wight-text);
-}
-.address {
-  padding-bottom: 60px;
+  display: block
 }
 .footer-address {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+  display: block
 }
