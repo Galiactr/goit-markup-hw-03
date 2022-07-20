@@ -54,7 +54,7 @@ img {
   text-align: center;
   margin-bottom: 0;
   align-items: center;
- }
+}
 .header-logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -248,7 +248,7 @@ img {
 }
 .portfolio-list:nth-child(4n) {
   margin-right: 0;
-} 
+}
 .team-div {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -355,7 +355,7 @@ img {
 }
 .portfolio-lists:nth-child(3n) {
   margin-right: 0;
-} 
+}
 .portfolio-title {
   font-size: 36px;
   font-weight: 700;
@@ -381,7 +381,7 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-  }
+}
 .project-name {
   font-size: 18px;
   line-height: 2;
@@ -416,7 +416,7 @@ img {
   line-height: 1.2;
   display: block;
   margin-bottom: 20px;
- } 
+}
 
 .logo-accent-footer {
   color: var(--wight-text);
@@ -429,17 +429,17 @@ img {
   font-size: 14px;
   line-height: 1.7;
   color: var(--wight-text);
-  display: block
- }
- .contact-list-item {
+  display: block;
+}
+.contact-list-item {
   margin-bottom: 9px;
- }
- .footer-address {
+}
+.footer-address {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   display: block;
- }
+}
 .contact-list-item.phone {
   margin-bottom: 0;
 }
